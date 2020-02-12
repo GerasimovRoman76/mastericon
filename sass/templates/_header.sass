@@ -1,0 +1,28 @@
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+.logo
+  display: flex
+  text-decoration: none
+  color: #93825B
+  &-text
+    font-size: 2.142rem
+    margin-left: 22px
+.nav
+  &-item
+    display: inline-block
+    font-size: 1.571rem
+    text-decoration: none
+    color: #93825B
+    margin-left: 3.07rem
+    &::after
+      background-color: #93825B
+      display: block
+      content: ""
+      height: 2px
+      width: 0%
+      transition: width .3s ease-in-out
+    &:hover
+      &::after
+        width: 100%

@@ -5,14 +5,14 @@ html {
 body {
   background-color: #EBE7C7;
   font-family: 'Cormorant', serif;
-  /* font-family: 'Playfair Display SC', serif */
+  /* font-family: 'Playfair Display SC', serif; */
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
-  color: #6C6045;
+  color: #6C6045; 
 }
 
-.container {
+.container{
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
@@ -23,30 +23,19 @@ img {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.menu-logo {
   display: flex;
   text-decoration: none;
   color: #93825B;
 }
-
 .logo-text {
   font-size: 2.142rem;
   margin-left: 22px;
 }
-
 .nav-item {
   display: inline-block;
   font-size: 1.571rem;
@@ -54,34 +43,29 @@ img {
   color: #93825B;
   margin-left: 3.07rem;
 }
-
 .nav-item::after {
   background-color: #93825B;
   display: block;
   content: "";
   height: 2px;
   width: 0%;
-  -webkit-transition: width .3s ease-in-out;
   transition: width .3s ease-in-out;
 }
-
 .nav-item:hover::after {
-  width: 100%;
+  width: 100%
 }
 
 .hero-title {
   font-family: 'Playfair Display SC', serif;
   font-weight: bold;
-  font-size: 2.571rem;
-  color: #93825B;
+  font-size: 2.571rem;  
+  color: #93825B;  
   margin-left: 3.5rem;
   margin-bottom: 4.285rem;
 }
-
 .hero-title-big {
   font-size: 5.285rem;
 }
-
 .hero-description {
   max-width: 41rem;
   font-weight: 500;
@@ -90,7 +74,6 @@ img {
   border: 1px solid #93825B;
   padding: 4.214rem 5.142rem 5.785rem 1.857rem;
 }
-
 .hero-btn {
   font-weight: 500;
   font-size: 2.142rem;
@@ -99,11 +82,8 @@ img {
   color: #ffffff;
   padding: 19px 35px;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  transition: 0.3s
 }
-
 .hero-btn:hover {
   background-color: #E3C374;
 }
-/*# sourceMappingURL=style.css.map */
