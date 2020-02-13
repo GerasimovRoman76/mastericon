@@ -13,13 +13,22 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #EBE7C7;
 }
 
 .menu {
@@ -32,6 +41,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 25px 0;
 }
 
 .logo {
@@ -44,7 +54,12 @@ img {
 
 .logo-text {
   font-size: 2.142rem;
+  margin: 0;
   margin-left: 22px;
+}
+
+.nav {
+  padding-top: 7px;
 }
 
 .nav-item {
@@ -69,10 +84,21 @@ img {
   width: 100%;
 }
 
+.hero {
+  padding-top: 6rem;
+  height: 100vh;
+}
+
+.hero-container {
+  position: relative;
+  height: 100%;
+}
+
 .hero-title {
   font-family: 'Playfair Display SC', serif;
   font-weight: bold;
   font-size: 2.571rem;
+  line-height: 2.428rem;
   color: #93825B;
   margin-left: 3.5rem;
   margin-bottom: 4.285rem;
@@ -80,6 +106,11 @@ img {
 
 .hero-title-big {
   font-size: 5.285rem;
+  line-height: 7.071rem;
+}
+
+.hero-text {
+  position: relative;
 }
 
 .hero-description {
@@ -92,6 +123,9 @@ img {
 }
 
 .hero-btn {
+  position: absolute;
+  bottom: -2.285rem;
+  left: 3.571rem;
   font-weight: 500;
   font-size: 2.142rem;
   border: none;
@@ -105,5 +139,64 @@ img {
 
 .hero-btn:hover {
   background-color: #E3C374;
+}
+
+.hero-video {
+  position: relative;
+  max-width: 29.142rem;
+  min-height: 21.142rem;
+  background: url("../img/video-mask.jpg") no-repeat center/cover;
+  left: 51%;
+  margin-top: -38.5rem;
+  border-top: 3.071rem solid #DFDAB0;
+  border-bottom: 3.071rem solid #DFDAB0;
+  border-left: 6.5rem solid #DFDAB0;
+  border-right: 6.5rem solid #DFDAB0;
+}
+
+.hero-video::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(228, 225, 196, 0.25);
+}
+
+.hero-video-play {
+  position: absolute;
+  top: 35.5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.hero-arrow {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 3.785rem;
+}
+
+.hero-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-top: 6.214rem;
+}
+
+.hero-phone {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2.142rem;
+  color: #93825B;
+  text-decoration: none;
+  margin-right: 1.285rem;
+}
+
+.social-link {
+  margin-left: 3.928rem;
 }
 /*# sourceMappingURL=style.css.map */

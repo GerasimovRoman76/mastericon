@@ -1,13 +1,22 @@
-.hero
+.hero 
+  padding-top: 6rem
+  height: 100vh
+  &-container
+    position: relative
+    height: 100%
   &-title
     font-family: 'Playfair Display SC', serif
     font-weight: bold
-    font-size: 2.571rem  
+    font-size: 2.571rem 
+    line-height: 2.428rem 
     color: #93825B  
     margin-left: 3.5rem
     margin-bottom: 4.285rem
     &-big
       font-size: 5.285rem
+      line-height: 7.071rem
+  &-text
+    position: relative
   &-description
     max-width: 41rem
     font-weight: 500
@@ -16,6 +25,9 @@
     border: 1px solid #93825B
     padding: 4.214rem 5.142rem 5.785rem 1.857rem
   &-btn
+    position: absolute  
+    bottom: -2.285rem
+    left: 3.571rem
     font-weight: 500;
     font-size: 2.142rem;
     border: none;
@@ -26,3 +38,45 @@
     transition: 0.3s
     &:hover
       background-color: #E3C374
+  &-video
+    position: relative
+    max-width: 29.142rem
+    min-height: 21.142rem
+    background: url('../img/video-mask.jpg') no-repeat center / cover
+    left: 51%
+    margin-top: -38.5rem
+    border-top: 3.071rem solid #DFDAB0
+    border-bottom: 3.071rem solid #DFDAB0
+    border-left: 6.5rem solid #DFDAB0
+    border-right: 6.5rem solid #DFDAB0
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: rgba(228, 225, 196, 0.25)
+    &-play
+      position: absolute
+      top: 35.5%
+      left: 50%
+      transform: translateX(-50%)
+      cursor: pointer
+  &-arrow
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 3.785rem
+  &-contacts
+    display: flex
+    position: absolute
+    right: 0
+    margin-top: 6.214rem
+  &-phone
+    font-family: 'Playfair Display SC', serif
+    font-size: 2.142rem
+    color: #93825B
+    text-decoration: none
+    margin-right: 1.285rem  
+.social
+  &-link
+    margin-left: 3.928rem 
