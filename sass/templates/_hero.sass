@@ -28,13 +28,13 @@
     position: absolute  
     bottom: -2.285rem
     left: 3.571rem
-    font-weight: 500;
-    font-size: 2.142rem;
-    border: none;
-    background-color: #C9B27C;
-    color: #ffffff;
-    padding: 19px 35px;
-    cursor: pointer;
+    font-weight: 500
+    font-size: 2.142rem
+    border: none
+    background-color: #C9B27C
+    color: #ffffff
+    padding: 19px 35px
+    cursor: pointer
     transition: 0.3s
     &:hover
       background-color: #E3C374
@@ -76,7 +76,22 @@
     font-size: 2.142rem
     color: #93825B
     text-decoration: none
-    margin-right: 1.285rem  
+    margin-right: 1.285rem 
+    transition: 0.3s
+    &:hover
+      color: #E3C374
+    &::after
+      background-color: #93825B
+      display: block
+      content: ""
+      height: 2px
+      width: 0%
+      margin-top: 5px
+      transition: width .3s ease-in-out
+    &:hover
+      &::after
+        width: 100% 
 .social
   &-link
     margin-left: 3.928rem 
+    transition: 0.3s
