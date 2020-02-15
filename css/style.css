@@ -86,12 +86,11 @@ header {
 
 .hero {
   padding-top: 6rem;
-  height: 100vh;
+  margin-bottom: 16rem;
 }
 
 .hero-container {
   position: relative;
-  height: 100%;
 }
 
 .hero-title {
@@ -176,7 +175,7 @@ header {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 3.785rem;
+  bottom: -15.215rem;
 }
 
 .hero-contacts {
@@ -337,5 +336,88 @@ header {
 
 .swiper-button-next::after {
   display: none;
+}
+
+.stages-title {
+  margin: 0;
+  margin-bottom: 34px;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+  font-size: 5.285rem;
+  text-align: center;
+  color: #93825B;
+}
+
+.stages-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 41.071rem;
+  margin: auto;
+}
+
+.stages-image {
+  margin-top: 6px;
+  padding: 0;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.stages-text {
+  margin-top: 45px;
+  font-weight: 500;
+  font-size: 1.714rem;
+  text-align: center;
+}
+
+.we-bg {
+  background-color: #DFDAB0;
+  width: 100%;
+  min-height: 27.642rem;
+}
+
+.we-title {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+  font-size: 5.285rem;
+  text-align: center;
+  color: #93825B;
+}
+
+.we-foto {
+  display: block;
+  margin: -17.142rem auto 0;
+}
+
+.we-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3.571rem 0 2.857rem 0;
+  width: 100%;
+  border: 1px solid #93825B;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.we-text {
+  margin: 47px 0 47px 0;
+  max-width: 70.5rem;
+  font-weight: 500;
+  font-size: 1.714rem;
+  line-height: 2.071rem;
+}
+
+.we-arrow {
+  display: block;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
